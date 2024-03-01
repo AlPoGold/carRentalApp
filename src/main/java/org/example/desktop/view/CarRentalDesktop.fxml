@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane fx:controller="org.example.desktop.controller.CarRentalDesktopController" xmlns:fx="http://javafx.com/fxml" prefHeight="600.0" prefWidth="800.0">
+    <center>
+        <VBox alignment="CENTER" spacing="10">
+            <HBox spacing="10">
+                <Label text="Customer ID:" />
+                <TextField fx:id="customerIdField" />
+                <Label text="Car ID:" />
+                <TextField fx:id="carIdField" />
+                <Button fx:id="bookButton" text="Book" onAction="#handleBookButton" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Return Car ID:" />
+                <TextField fx:id="returnCarIdField" />
+                <Button fx:id="returnButton" text="Return" onAction="#handleReturnButton" />
+            </HBox>
+            <Button fx:id="refreshButton" text="Refresh" onAction="#handleRefreshButton" />
+        </VBox>
+    </center>
+</BorderPane>
